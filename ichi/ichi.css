@@ -1,43 +1,50 @@
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 18px;
-    color: var(--tg-theme-text-color);
-    background: var(--tg-theme-bg-color);
-}
-.container{
-    max-width: 390px;
-
-}
-.inner{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
-}
-.img{
-    width: 150px;
-}
-.item{
-    text-align: center;
-}
-.btn{
-    display: inline-block;
-    padding: 5px 17px;
-    border: none;
-    background: rgb(248, 168, 24);
-    border-radius: 10px;
+  }
+  
+  .card {
+    display: flex;
+    max-width: 388px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .card-details {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .card-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .card-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-details h2 {
+    margin-top: 0;
+  }
+  
+  .card-details button {
+    padding: 10px 20px;
+    background-color: #007bff;
     color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-decoration: none;
- }
-.btn:hover{
-    background: lightgreen;
-}
-.usercard{
-    text-align: center;
-}
-.menu {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card-details button:hover {
+    background-color: #0056b3;
+  }
+
+  .menu {
     width: 390px; /* Ширина меню */
     background-color: #333;
     background-color: blue ;
@@ -58,9 +65,6 @@ body {
     .menu-item {
         border-right: 1px solid rgb(1, 26, 251); /* Разделитель между пунктами меню */
     }
-  
-  
-  
   .menu-link {
     display: block;
     padding: 10px 20px;
@@ -71,3 +75,4 @@ body {
   .menu-link:hover {
     background-color: rgb(181, 181, 255); /* Изменение цвета при наведении */
   }
+  

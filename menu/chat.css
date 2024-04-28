@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  max-width: 24%; /* Ограничение ширины контейнера чата до половины экрана */
+  justify-content: flex-start; /* Выравнивание контейнера чата по верхнему краю */
+  
+}
+
+
+.chat-header {
+  padding: 20px;
+  background-color: #0088cc;
+  color: #fff;
+  text-align: center;
+  width: 347px;
+}
+
+.chat-messages {
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.sent-message {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+}
+
+#message-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#send-button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  background-color: #0088cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background-color: #005580;
+}
+.menu {
+  width: 390px; /* Ширина меню */
+  background-color: #333;
+  background-color: blue ;
+  background-image: url("path/to/your/image.jpg"); /* Путь к вашему изображению */
+  background-size: cover; /* Масштабирование изображения для заполнения области */
+  background-position: center; /* Выравнивание изображения по центру */
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  align-items: center; 
+  border-radius: 20px;
+  justify-content: space-between;
+}
+
+  .menu-item {
+      border-right: 1px solid rgb(1, 26, 251); /* Разделитель между пунктами меню */
+  }
+
+.menu-link {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  background-color: rgb(181, 181, 255); /* Изменение цвета при наведении */
+}
